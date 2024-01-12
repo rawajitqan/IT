@@ -1,0 +1,49 @@
+url: https://rawajitqan.com
+
+
+# Site settings
+title: RAWAJ ALITQAN
+email: pmo@rawajitqan.com
+description: "Rawaj Al-Itqan Construction company in KSA with landscape, interior architecture and design, decoration, electrical and Finishing Works Services, Call us Now or make a Free consultation!"
+
+
+# Team names, titles and social links
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/company/rawajitqan/
+  - title: twitter
+    url: https://twitter.com/rawajalitqan
+  - title: facebook
+    url: https://www.facebook.com/RAWAJ-Aitqan-Est-264712217481264
+  - title: instagram
+    url: https://www.instagram.com/rawajalitqan/
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 14231 Khurais Rd
+  - line: An Nasim Al Gharbi, SA 14231
+# Author Settings
+author: رواج الإتقان # add your name
+author-img: logo2.svg # add your photo
+about-author: مؤسسة رواج الإتقان للمقاولات والمشاريع العمرانية في جميع أنحاء المملكة العربية السعودية. # add description
+social-twitter: rawajalitqan
+social-facebook: RAWAJ-Aitqan-Est-264712217481264
+social-instagram: rawajalitqan
+social-email: pmo@rawajitqan.com
+# Disqus
+discus-identifier: rawajitqan # add your discus identifier
+
+# Tracker
+analytics:
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+permalink: /:title/
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+

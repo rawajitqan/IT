@@ -5376,8 +5376,8 @@ blockquote span {
   .navy {
     position: absolute;
     left: 2rem;
-    top: 5rem;
-    padding-right: 1rem;
+    top: 2rem;
+    padding: 1rem;
   }
   .notifs {
     max-width: 200px;

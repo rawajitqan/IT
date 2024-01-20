@@ -3458,6 +3458,9 @@ textarea[id^="form-field_"] {
 .leading-7 {
   line-height: 1.75rem; /* 28px */
 }
+.leading-12{
+line-height: 3rem;
+}
 .text-blueGray-600 {
   --tw-text-opacity: 1;
   color: rgba(71, 85, 105, var(--tw-text-opacity));

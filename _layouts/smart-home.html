@@ -1,39 +1,56 @@
-<style>
-a.button.one::after {
-  bottom: -2.5%;
-  right: -1%;
-  border-bottom: 2px solid #4fad49;
-  border-right: 2px solid #4fad49;
-}
-a.button.one::before, a.button.one::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  transition: all 0.3s ease;
-}
-a.button.one::before {
-  top: -2.5%;
-  left: -1%;
-  border-top: 2px solid #4fad49;
-  border-left: 2px solid #4fad49;
-}
-.button {
-  text-decoration: none;
-  color: #4fad49;
-  font-weight: bold;
-  font-size: 20px;
-  position: relative;
-  padding: 10px;
-}
-a.button.one:hover:before, a.button.one:hover:after{
-	width: 100%;
-	height: 100%;
-	transition: all 0.3s ease;
-}
-</style> 
 
-<section
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+   
+
+    <body class="text-blueGray-700 antialiased" data-sveltekit-preload-data="hover">
+      <div style="display: contents">
+
+{% include nav.html %}
+<div
+          class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
+        >
+    <div
+            class="absolute top-0 w-full h-full bg-center bg-cover"
+            style="
+          background-image: url(/assets/smart-home-2769210_1920.jpg);
+        "
+          >
+<span
+              id="blackOverlay"
+              class="w-full h-full absolute opacity-75 bg-black"
+            />
+          </div>
+          <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+              <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                <div class="pt-8">
+                  <h1 class="text-white font-semibold text-5xl shadow-black sm:text-xl">
+                     حوّل منزلك التقليدي إلى منزل ذكي
+                  </h1>
+                  <p class="mt-4 text-lg leading-8 text-blueGray-200 shadow-blue">
+                  نساعدك على تطويع أحدث التقنيات لراحتك لتسمتع بنمط حياة جديد وعصري
+
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+            <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+        style="transform: translateZ(0);"
+      >
+     
+      </div>
+        </div>
+    
+     {% include wa_button.html %}
+<!-- Services -->
+ <section
         class="pb-20 bg-blueGray-200 section-1"
       >
 <div class="text-center py-8" id="services">
@@ -41,7 +58,7 @@ a.button.one:hover:before, a.button.one:hover:after{
 
               class=" text-3xl font-bold text-gray-900 dark:text-white transition"
             >
-خدماتنا
+بعض التقنيات التي نوفرها
    
             </h4>
           </div>
@@ -52,10 +69,10 @@ a.button.one:hover:before, a.button.one:hover:after{
             <div
               class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
             >
-              <i class="fas fa-server text-xl"></i>
+              <i class="fas fa-fingerprint"></i>
             </div>
             <h3 class="text-3xl sm:text-xs mb-2 font-semibold leading-normal">
-              توريد وتركيب البنى التحتية التقنية
+              القفل الذكي
             </h3>
  <ul class="list-none mt-6">
                 <li class="py-2">
@@ -69,7 +86,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                        اختيار المعدات الأفضل أداءً والأنسب سعرًا بحسب كل مشروع
+                     إمكانية إنشاء رقم سري مؤقت للضيوف
                       </h4>
                     </div>
                   </div>
@@ -85,7 +102,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                        تركيب وتوصيل الأجهزة بأفضل الطرق والهيكليات الهندسية بحسب الموقع والمشروع
+                        الدخول السريع بالبصمة، حيث يمكن إضافة أكثر من 100 بصمة مختلفة
                       </h4>
                     </div>
                   </div>
@@ -100,19 +117,61 @@ a.button.one:hover:before, a.button.one:hover:after{
                       </span>
                     </div>
                     <div>
-                      <h4 class="text-blueGray-500 pr-4">تشغيل الأجهزة وإجراء التدخلات البرمجية والتهيئات اللازمة
+                      <h4 class="text-blueGray-500 pr-4">
+الدخول بالرقم السري
                       </h4>
                     </div>
                   </div>
                 </li>
- <h4 class="text-blueGray-500 pr-12 pt-8 text-lg">
-تعرف على أحد تطبيقات هذه الخدمة للأفراد: 
-<a class="button one" href="/البيت-الذكي">
-البيت الذكي
-</a>
+             <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+الدخول بالكرت، ويمكن إضافة أكثر من 30 كرت مختلف
                       </h4>
+                    </div>
+                  </div>
+                </li>
+ <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+الدخول التقليدي بالمفتاح، حيث يتوفر نسختيي مفتاح للقفل الذكي
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+ <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+إمكانية فتح القفل عبر تطبيق الجوال
+                      </h4>
+                    </div>
+                  </div>
+                </li>
               </ul>
-
           </div>
 
           <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -121,7 +180,7 @@ a.button.one:hover:before, a.button.one:hover:after{
             >
               <img
                 alt="..."
-                src="/assets/img/server-1235959_1280.webp"
+                src="/assets/img/61O0eRKgOfL.webp"
 
                 class="w-full align-middle rounded-t-lg"
               />
@@ -142,7 +201,7 @@ a.button.one:hover:before, a.button.one:hover:after{
             <img
               alt="..."
               class="max-w-full rounded-lg"
-              src="/assets/img/infrastructure.png"
+              src="/assets/img/smart-home-3779361_1280.webp"
 
             />
           </div>
@@ -151,9 +210,11 @@ a.button.one:hover:before, a.button.one:hover:after{
               <div
                 class="tirikiwaz p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full"
               >
-                <i class="fas fa-network-wired text-xl"></i>
+                <i class="fas fa-sun"></i>
               </div>
-              <h3 class="text-3xl sm:text-xs font-semibold">صيانة وتشغيل النظم والأجهزة والشبكات</h3>
+              <h3 class="text-3xl sm:text-xs font-semibold">
+الإنارة الذكية
+</h3>
              <ul class="list-none mt-6">
                 <li class="py-2">
                   <div class="flex items-center">
@@ -166,7 +227,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                       تحسين وصيانة الشبكات والبنى التحتية الموجودة في المنشآت المؤسساتية والفردية
+                       إمكانية إشعال وإطفاء الإنارة عبر تطبيق الجوال
                       </h4>
                     </div>
                   </div>
@@ -182,7 +243,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                       تحديث كافة التطبيقات والمعدات بحسب المشروع الموجود
+إمكانية التحكم بمستوى شدة الإنارة
                       </h4>
                     </div>
                   </div>
@@ -198,7 +259,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-تحسين وتوسيع التطبيقات البرمجية مع مراعاة الأداء والكود النظيف 
+إمكانية تحديد أوقات محددة لإشعال وإطفاء الإنارة
                       </h4>
                     </div>
                   </div>
@@ -214,11 +275,45 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-نقل تطبيق وب من استضافة لأخرى وتهيئة كافة الإعدادات اللازمة لذلك
+إمكانية ربط الإنارة بحساسات الحركة، حيث ينار المكان تلقائيًا عند وجود حركة، ويطفَأ تلقائيًا عند زوالها
                       </h4>
                     </div>
                   </div>
                 </li>
+
+<li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+إمكانية التحكم بالإنارة عبر شاشات التحكم الذكية
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+<li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+إمكانية التحكم التقليدي عبر أزرار الإنارة
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+
               </ul>
 
             </div>
@@ -230,10 +325,10 @@ a.button.one:hover:before, a.button.one:hover:after{
             <div
               class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
             >
-              <i class="fas fa-info text-xl"></i>
+              <i class="fas fa-fan"></i>
             </div>
             <h3 class="text-3xl sm:text-xs mb-2 font-semibold leading-normal">
-              الدعم التقني
+التكييف الذكي
             </h3>
    <ul class="list-none mt-6">
                 <li class="py-2">
@@ -247,7 +342,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                   تقديم الاستشارات التقنية المتخصصة للأفراد والمؤسسات
+إمكانية فتح وإغلاق التكييف من الجوال
                       </h4>
                     </div>
                   </div>
@@ -263,7 +358,23 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                     خدمات الاشتراك وتهئية التطبيقات اللازمة للمشاريع (التعليمية، الصحية، المحاسبية..إلخ) 
+                     التحكم بدرجة الحرارة من الجوال
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+    <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+إمكانية التحكم بالتكييف عبر شاشات التحكم والأوامر الصوتية
                       </h4>
                     </div>
                   </div>
@@ -278,7 +389,7 @@ a.button.one:hover:before, a.button.one:hover:after{
             >
               <img
                 alt="..."
-                src="/assets/img/web-3967926_1280.webp"
+                src="/assets/img/iQool9_2_Supersize.webp"
 
                 class="w-full align-middle rounded-t-lg"
               />
@@ -294,7 +405,7 @@ a.button.one:hover:before, a.button.one:hover:after{
             <img
               alt="..."
               class="max-w-full rounded-lg"
-              src="/assets/img/web.png"
+              src="/assets/img/bed-1839183_640.jpg"
 
 
             />
@@ -304,9 +415,10 @@ a.button.one:hover:before, a.button.one:hover:after{
               <div
                 class="tirikiwaz p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full"
               >
-                <i class="fas fa-globe text-xl"></i>
+<i class="fas fa-grip-lines-vertical"></i>
               </div>
-              <h3 class="text-3xl sm:text-xs font-semibold">تصميم وبرمجة مواقع الوب
+              <h3 class="text-3xl sm:text-xs font-semibold">
+الستائر الذكية
 </h3>
              <ul class="list-none mt-6">
  <li class="py-2">
@@ -320,7 +432,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                    تخطيط وتنفيذ تطبيقات وب متكاملة بحسب الطلب، بما في ذلك تطبيقات إدارة المنشآت
+                   إمكانية فتح وإغلاق الستائر من التطبيق أو عبر الأوامر الصوتية
                       </h4>
                     </div>
                   </div>
@@ -336,59 +448,12 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-                    تصميمات احترافية أنيقة متوافقة مع جميع الأجهزة
+إمكانية تحديد أوقات محددة للفتح والإغلاق التلقائي للستائر
                       </h4>
                     </div>
                   </div>
                 </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
-                      >
-                        <i class="fas fa-angle-left"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-blueGray-500 pr-4">
- التركيز على الأداء لضمان السرعة وقابلية التوسع (إضافة مزايا جديدة لاحقًا بسلاسة) للمواقع
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
-                      >
-                       <i class="fas fa-angle-left"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-blueGray-500 pr-4">
-إنتاج مواقع متوافقة مع محركات البحث لظهورها بالنتائج الأولى للبحث
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-       <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
-                      >
-                        <i class="fas fa-angle-left"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-blueGray-500 pr-4">
-بناء البنية الأساسية اللازمة للتسويق الإلكتروني الناجح، بما في ذلك البيانات الوصفية لصفحات الموقع وتوليدها من طرف المخدم (SSR)
-                      </h4>
-                    </div>
-                  </div>
-                </li>
+               
               </ul>
 
 
@@ -401,10 +466,10 @@ a.button.one:hover:before, a.button.one:hover:after{
             <div
               class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
             >
-              <i class="fas fa-mobile-alt text-xl"></i>
+<i class="fab fa-watchman-monitoring"></i>
             </div>
             <h3 class="text-3xl sm:text-xs mb-2 font-semibold leading-normal">
-تطوير تطبيقات الموبايل
+نظام المراقبة
             </h3>
  <ul class="list-none mt-6">
                 <li class="py-2">
@@ -418,7 +483,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-إنتاج كود نظيف قابل للتوسع بسلاسة
+كاميرات خارجية وداخلية بدقة تبدأ من 5 ميغابيكسل فأكثر
                       </h4>
                     </div>
                   </div>
@@ -434,7 +499,7 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-             التركيز على الأداء مثل السرعة والاستهلاك المنخفض للطاقة والذاكرة
+الكاميرات الخارجية مخصصة لمقاومة العوامل الجوية من ماء وغبار وحرارة
                       </h4>
                     </div>
                   </div>
@@ -450,7 +515,39 @@ a.button.one:hover:before, a.button.one:hover:after{
                     </div>
                     <div>
                       <h4 class="text-blueGray-500 pr-4">
-رفع التطبيق على المتاجر الشهيرة مثل جوجل بلاي ومتجر أبل
+تدعم الرؤية الليلية
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+    <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+دقة عالية تسمح بتكبير الصور وقراءة التفاصيل
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+    <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
+                      >
+                        <i class="fas fa-angle-left"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-blueGray-500 pr-4">
+إمكانية المراقبة عن بعد عبر التطبيق أو شاشات المراقبة
                       </h4>
                     </div>
                   </div>
@@ -465,7 +562,7 @@ a.button.one:hover:before, a.button.one:hover:after{
             >
               <img
                 alt="..."
-                src="/assets/img/android-2027560_1280.png"
+                src="/assets/img/camera-8053993_640.jpg"
 
                 class="w-60 align-middle rounded-t-lg"
               />
@@ -475,66 +572,23 @@ a.button.one:hover:before, a.button.one:hover:after{
           </div>
         </div>
       </div>
-  <div class="container mx-auto px-4 pt-16">
-        <div class="items-center flex flex-wrap">
-          <div class="w-full md:w-4/12 ml-auto mr-auto px-4  mt-16 sm:order-2" >
-            <img
-              alt="..."
-              class="max-w-full w-10/12 rounded-lg"
-              src="/assets/img/neural-network-3816319_1280.webp"
-
-
-            />
-          </div>
-          <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-            <div class="md:pr-12">
-              <div
-                class="tirikiwaz p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full"
-              >
-                <i class="fas fa-code-branch text-xl"></i>
-              </div>
-              <h3 class="text-3xl sm:text-xs font-semibold">
-خدمات تحليل البيانات والذكاء الصناعي 
-</h3>
-             <ul class="list-none mt-6">
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
-                      >
-                        <i class="fas fa-angle-left"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-blueGray-500 pr-4">
-استخدام علوم الإحصاء وتعدين البيانات لاكتشاف الأنماط في البيانات الموجودة وإعطاء أفضل الاقتراحات لتحسين طرق التسويق والبيع
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="flex items-center">
-                    <div>
-                      <span
-                        class="text-base font-semibold inline-block  px-2 uppercase rounded-full text-emerald-300 tirikiwaz mr-3"
-                      >
-                       <i class="fas fa-angle-left"></i>
-                      </span>
-                    </div>
-                    <div>
-                      <h4 class="text-blueGray-500 pr-4">
- بناء مودلات تعلم الآلة والتعلم العميق خاصة بحسب كل مشروع للحصول على تخمينات متعلقة بالبيانات الجديدة.
-
-                      </h4>
-                    </div>
-                  </div>
-                </li>
-           
-              </ul>
-
-
-            </div>
-          </div>
-        </div>
+   <div class="text-center my-6">
+   <a  href="/contact">
+              <button
+                class="text-white active:bg-green-400 text-xl font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                type="button" style="  background-color: #4fad49;"
+                >    ابدأ رحلتك للمنزل الذكي
+              </button>
+            </a>
+    </div>
 </section>
+
+
+<!-- End of Services -->
+
+
+    {% include footer.html %}
+
+        </div>
+    </body>
+</html>

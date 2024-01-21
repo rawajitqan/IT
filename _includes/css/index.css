@@ -2050,7 +2050,7 @@ text-shadow: #009fff 0px 0px 10px;
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .leading-none {

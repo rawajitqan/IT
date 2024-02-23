@@ -4,9 +4,11 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-   
+    {% if page.url contains "/en" %}
+    <meta name="description" content="Specialized engineers dedicated to adapting the latest technologies to serve you">
+    {% else %}
     <meta name="description" content="{{ site.description }}">
-
+    {% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="shortcut icon" href="{{ site.url }}/img/favicon.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/img/favicon.png" />

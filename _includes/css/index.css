@@ -49,9 +49,18 @@ Remove the margin in all browsers.
 body {
   margin: 0;
   direction: rtl;
+
   /* cursor: url('/assets/img/icons8-blue-pointer-24.png'), auto; */
 }
 
+nav li {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
@@ -5380,8 +5389,10 @@ blockquote span {
     position: absolute;
     left: 2rem;
     top: 2rem;
-    padding: 1rem;
+    padding: 0.25rem;
+    background-color: #00607b;
   }
+
   .notifs {
     max-width: 200px;
   }.sm\:pb-0 {

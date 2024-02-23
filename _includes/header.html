@@ -1,9 +1,12 @@
 <!-- Navigation -->
 
  <!-- nav -->
-{% include nav.html %}
+    {% if page.url contains "/en" %}
+{% include nav-en.html %} 
+    {% else %}
+{% include nav.html %}    {% endif %}
 <div
-          class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75 bg-blueGray-200"
+          class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen bg-blueGray-200"
         >
     <div
             class="absolute top-0 w-full h-full bg-center bg-cover"
@@ -20,6 +23,16 @@
             <div class="items-center flex flex-wrap">
               <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div class="pt-8">
+    {% if page.url contains "/en" %}
+<h1 class="text-white font-semibold text-5xl shadow-black sm:text-xl">
+                     Rawaj IT Co.
+                  </h1>
+                  <p class="mt-4 text-lg leading-8 text-blueGray-200 shadow-blue">
+          Specialized engineers dedicated to adapting the latest technologies to serve you
+
+                  </p>
+
+    {% else %}
                   <h1 class="text-white font-semibold text-5xl shadow-black sm:text-xl">
                      شركة رواج الإتقان لتقنية المعلومات
                   </h1>
@@ -27,7 +40,7 @@
                   مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك
 
                   </p>
-
+    {% endif %}
                 </div>
 
               </div>

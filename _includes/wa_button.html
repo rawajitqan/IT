@@ -9,7 +9,11 @@
 	width:60px;
 	height:60px;
 	bottom:40px;
+        {% if page.url contains "/en" %}
+    	right:40px;
+    {% else %}
 	left:40px;
+    {% endif %}
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;

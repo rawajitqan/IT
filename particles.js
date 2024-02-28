@@ -1,53 +1,3 @@
-<!-- Navigation -->
-
-
- <!-- nav -->
-    {% if page.url contains "/en" %}
-{% include nav-en.html %} 
-    {% else %}
-{% include nav.html %}    {% endif %}
-    <div id="large-header" class="large-header">
-  <canvas id="demo-canvas"></canvas>
-<div
-          class="relative flex content-center items-center justify-center min-h-screen bg-center bg-cover" style='background-image: url("assets/data-center-8026827_1920.png");'
-        >
-     <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
-          <div class="container relative mx-auto">
-            <div class="items-center flex flex-wrap">
-              <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-      
-    {% if page.url contains "/en" %}
-<h1 class="text-white font-semibold text-5xl shadow-black sm:text-xl">
-                     Rawaj IT Co.
-                  </h1>
-                  <p class="mt-4 text-lg leading-8 text-blueGray-200 shadow-blue">
-          Specialized engineers dedicated to adapting the latest technologies to serve you
-
-                  </p>
-
-    {% else %}
-                  <h1 class="text-white font-semibold text-5xl shadow-black sm:text-xl">
-                     شركة رواج الإتقان لتقنية المعلومات
-                  </h1>
-                  <p class="mt-4 text-lg leading-8 text-blueGray-200 shadow-blue">
-                  مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك
-
-                  </p>
-    {% endif %}
-               
-</div>
-              </div>
-            </div>
-          </div>
-            <div
-        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-        style="transform: translateZ(0);"
-      >
-     
-      </div>
-        </div>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-<script>
 (function() {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
@@ -233,11 +183,3 @@
     }
     
 })();
-</script>
-
-<!--    
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-

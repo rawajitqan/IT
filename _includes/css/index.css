@@ -64,17 +64,8 @@ nav li {
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
-@font-face {
-  font-family: sahlnaskh;
-  src: url("/assets/sahlnaskh-regular.ttf");
-}
-@font-face {
-  font-family: sahlnaskh;
-  src: url("/assets/sahlnaskh-bold.ttf");
-  font-weight: bold;
-}
 body {
-  font-family: sahlnaskh, cairo, system-ui, -apple-system,
+  font-family: cairo, system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
@@ -2015,6 +2006,9 @@ select {
 .hover\:bg-gray-100:hover {
   background-color: rgb(243 244 246);
 }
+.hover\:bg-sky-500:hover {
+background-color: rgb(14 165 233);
+}
 .hover\:bg-green-400:hover {
   background-color: rgb(74 222 128);
 }
@@ -2829,7 +2823,7 @@ textarea[id^="form-field_"] {
   padding-left: 5rem;
 }
 .bg-slate-900 {
-  background-color: rgb(15 23 42);
+  background-color: #050217cf;
 }
 .pr-4 {
   padding-right: 1rem;
@@ -2936,7 +2930,7 @@ textarea[id^="form-field_"] {
   background-position: bottom;
 }
 .text-emerald-300{
-  color: rgb(110 231 183);
+  color: rgb(29, 255, 16);
 }
 .pt-48 {
   padding-top: 12rem;
@@ -4204,7 +4198,9 @@ line-height: 3rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
+.bg-opacity-75 {
+ --tw-bg-opacity: 0.75;
+}
 @media (min-width: 1024px) {
   .lg\:bg-opacity-0 {
     --tw-bg-opacity: 0;
@@ -4969,30 +4965,7 @@ hr.style-seven:before {
 .text-cyan-600 {
   color: rgb(8 145 178);
 }
-.dark .dark\:bg-gray-900 {
-  background-color: #111827;
-}
-.dark .dark\:bg-blue-800 {
-  background-color: #1e40af;
-}
-.dark .dark\:text-white {
-  color: rgb(235, 231, 231);
-}
-.dark .dark\:border-teal-400 {
-  border-color: rgb(45 212 191);
-}
-.dark .dark\:text-sky {
-  color: #a9c8ff;
-}
-.dark .dark\:bg-blue-900 {
-  background-color: #031342;
-}
-.dark .dark\:hover\:bg-blue-600:hover {
-  background-color: #2563eb;
-}
-.dark .dark\:active\:bg-blue-500:active {
-  background-color: #3b82f6;
-}
+
 .transition {
   transition: 0.3s;
 }
@@ -5014,7 +4987,7 @@ hr.style-seven:before {
   transform: scale(1.5);
 }
 .tirikiwaz {
- background-color: #299a8c;
+ background-color: #1088aa;
 }
 .text-tirikiwaz {
   color: #096f62;
@@ -5388,7 +5361,6 @@ blockquote span {
   .navy {
     position: absolute;
     left: 2rem;
-    top: 2rem;
     padding: 0.25rem;
     background-color: #00607b;
   }

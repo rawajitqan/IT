@@ -64,6 +64,11 @@ nav li {
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
+@font-face {
+  font-family: cairo;
+  src: url("/assets/Cairo-VariableFont.ttf");
+}
+
 body {
   font-family: cairo, system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
@@ -1650,6 +1655,9 @@ select {
 .min-h-16 {
  min-height: 4rem;
 }
+.min-h-20 {
+ min-height: 20rem;
+}
 .items-baseline {
   align-items: baseline;
 }
@@ -2007,7 +2015,7 @@ select {
   background-color: rgb(243 244 246);
 }
 .hover\:bg-sky-500:hover {
-background-color: rgb(14 165 233);
+background-color: rgb(0, 125, 159);
 }
 .hover\:bg-green-400:hover {
   background-color: rgb(74 222 128);
@@ -2287,7 +2295,7 @@ textarea[id^="form-field_"] {
 }
 
 .bg-sky-600 {
-  background-color: rgb(2 132 199);
+  background-color: rgb(0, 103, 131);
 }
 .text-sky-600 {
   color: rgb(2 132 199);
@@ -3132,7 +3140,9 @@ textarea[id^="form-field_"] {
 .top-95-px {
   top: 95px;
 }
-
+.top-5{
+ top: 0.5rem;
+}
 .left-145-px {
   left: 145px;
 }
@@ -3994,7 +4004,6 @@ line-height: 3rem;
 .sm\:rounded-none {
     border-radius: 0;
 }
-
 .sm\:rounded-r-lg {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -4030,6 +4039,17 @@ line-height: 3rem;
 
   .md\:hidden {
     display: none;
+  }
+ .md\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .md\:rounded-none {
+    border-radius: 0;
+  }
+
+  .md\:rounded-s-lg {
+    border-radius: 0.5rem;
   }
 
   .md\:flex-row {
@@ -5354,7 +5374,7 @@ blockquote span {
     margin-right: 0;
   }
   .footer-color {
-    background-color: #008080;
+    background-color: #00607b;
     padding-top: 2rem;
     width: 100%;
   }

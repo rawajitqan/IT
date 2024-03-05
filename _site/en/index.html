@@ -94,7 +94,7 @@
 </style>
 
 <nav
-  class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+  class="sticky top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 bg-slate-900" style="background-image: radial-gradient(#280e23, #000000ad);"
 >
 
 
@@ -120,12 +120,12 @@
           <a
            
             class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            href="/"
+            href="/en"
           >
             <img
               src="/img/RIIT.png"
               alt="Logo"
-              width="100"
+              width="50"
               height="50"
             />
           </a>
@@ -221,7 +221,7 @@ if (x.className.includes("responsive")) {
     <div id="large-header" class="large-header">
   <canvas id="demo-canvas"></canvas>
 <div
-          class="relative flex content-center items-center justify-center min-h-screen bg-center bg-cover" style='background-image: url("assets/data-center-8026827_1920.webp");'
+          class="relative flex content-center items-center justify-center min-h-screen bg-center bg-cover" style='background-image: url("/assets/data-center-8026827_1920.webp");'
         >
      <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
           <div class="container relative mx-auto">
@@ -443,7 +443,7 @@ if (x.className.includes("responsive")) {
         
           <a class="page-link" href="/careers/">وظائف</a>
         
-          <a class="page-link" href="/contact/">Contact us</a>
+          <a class="page-link" href="/contact/">طلب خدمة</a>
         
           <a class="page-link" href="/en/">Rawaj IT Co.</a>
         
@@ -468,35 +468,7 @@ if (x.className.includes("responsive")) {
  -->
 
 
-     <style>
-
-
-.my-float{
-	margin-top:16px;
-}
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-        
-    	right:40px;
-    
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-</style>
-
-<a href="https://wa.me/966541193545" class="float" target="_blank">
-<i class="fab fa-whatsapp my-float"></i>
-</a>
-
+     
     <style>
 a.button.one::after {
   bottom: -2.5%;
@@ -625,9 +597,9 @@ Smart Home
             >
               <img
                 alt="..."
-                src="/assets/img/server-1235959_1280.webp"
+                data-src="/assets/img/server-1235959_1280.webp"
 
-                class="w-full align-middle rounded-t-lg"
+                class="lazyload w-full align-middle rounded-t-lg"
               />
 
 
@@ -645,8 +617,8 @@ Smart Home
           <div class="w-full md:w-4/12 ml-auto mr-auto px-4  mt-8 sm:order-2">
             <img
               alt="..."
-              class="max-w-full rounded-lg"
-              src="/assets/img/infrastructure.png"
+              class="lazyload max-w-full rounded-lg"
+              data-src="/assets/img/infrastructure.png"
 
             />
           </div>
@@ -794,9 +766,9 @@ necessary for projects (educational, health, accounting, etc.)
             >
               <img
                 alt="..."
-                src="/assets/img/web-3967926_1280.webp"
+                data-src="/assets/img/web-3967926_1280.webp"
 
-                class="w-full align-middle rounded-t-lg"
+                class="lazyload w-full align-middle rounded-t-lg"
               />
 
 
@@ -809,8 +781,8 @@ necessary for projects (educational, health, accounting, etc.)
           <div class="w-full md:w-4/12 ml-auto mr-auto px-4  mt-16 sm:order-2" >
             <img
               alt="..."
-              class="max-w-full rounded-lg"
-              src="/assets/img/web.png"
+              class="lazyload max-w-full rounded-lg"
+              data-src="/assets/img/web.png"
 
 
             />
@@ -1059,9 +1031,9 @@ Play and Apple Store
             >
               <img
                 alt="..."
-                src="/assets/img/android-2027560_1280.png"
+                data-src="/assets/img/android-2027560_1280.png"
 
-                class="w-60 align-middle rounded-t-lg"
+                class="lazyload w-60 align-middle rounded-t-lg"
               />
 
 
@@ -1074,8 +1046,8 @@ Play and Apple Store
           <div class="w-full md:w-4/12 ml-auto mr-auto px-4  mt-16 sm:order-2" >
             <img
               alt="..."
-              class="max-w-full w-10/12 rounded-lg"
-              src="/assets/img/neural-network-3816319_1280.webp"
+              class="lazyload max-w-full w-10/12 rounded-lg"
+              data-src="/assets/img/neural-network-3816319_1280.webp"
 
 
             />
@@ -1136,24 +1108,160 @@ learning models to make predictions about new data.
         </div>
 </section>
 
+    
+<section class="bg-blueGray-200 py-4 section-3">
+<div class="text-center my-6" id="أعمالنا">
+            <h1
+
+              class="my-10 text-3xl font-bold text-gray-900 dark:text-white transition"
+            >
+             Some of Our Projects
+   
+            </h1>
+          </div>
+
+  
+      <div class="mx-auto max-w-screen-md sm:text-center">
+<div class="flex flex-wrap items-center">
+          <div class="px-4 mr-auto ml-auto">
+    <div class="card flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
+    <img class="lazyload card-img max-h-40 w-full align-middle object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/qaraween1.png" alt="Qaraween-learning-platform" onclick="openLightbox(this)">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">E-Learning Platform</h2>
+        <p class="mb-3 font-normal text-white">
+Where we designed and developed a full web app for education platform.
+</p>
+<p class="mb-3 font-normal text-white">
+The platform contains paths and rooms where the student can take his/her personal notes directly within the room, and he/she can also participate in the discussion page for each room. In addition to user's profile page and control panel.
+</p>
+<p class="mb-3 font-normal text-white">
+We have applied gamification and competition techniques to motivate students and push them to continue the learning paths.
+</p>    
+</div>
+</div>
+         
+          </div>
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img src="" alt="Enlarged Image" class="lightbox-img mr-auto ml-auto transition" id="lightbox-img">
+</div>
+
+          <div class="px-4 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words my-6"
+            >
+        <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/Ihsan-theme.png" alt="Blog Theme" onclick="openLightbox(this)">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">Blog Theme</h2>
+        <p class="mb-3 font-normal text-white">
+A jekyll blog template with a sidebar that is compatible with SEO and supports AMP. It displays the reading time of each post, author information, and related posts based on tags, and supports Google statistics and ads.
+
+</p>
+    </div>
+</div>
+
+
+            </div>
+          </div>
+
+  <div class="px-4 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words my-6"
+            >
+        <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/mobile-game.png" alt="Mobiel Game" onclick="openLightbox(this)">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">Mobile Game</h2>
+        <p class="mb-3 font-normal text-white">
+A mobile game with a scenario based on the story of Salah al-Din al-Ayyubi. The player goes through several levels, where each level has its own geographical location on the map. The player must control all the areas surrounding Al-Quds according to the historical scenario, finally ending with Al-Quds level. The game was built using one of the famous game engines, so it can be exported to any platform, whether to Google and Apple stores or to the Steam platform and others.
+</p>
+    </div>
+</div>
+
+
+            </div>
+          </div>
+
+  <div class="px-4 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words my-6"
+            >
+        <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/homebook.png" alt="Mobile App" onclick="openLightbox(this)">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">Mobile App</h2>
+        <p class="mb-3 font-normal text-white">
+A mobile application was developed with a team of engineers whose goal is to calculate and distribute the costs of living among residents of shared housing. The application was built specifically for Android.
+
+</p>
+    </div>
+</div>
+
+
+            </div>
+          </div>
+
+  <div class="px-4 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words my-6"
+            >
+        <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/INF202.png" alt="Computer App" onclick="openLightbox(this)">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">Computer App</h2>
+        <p class="mb-3 font-normal text-white">
+A simple computer application created at the request of a clinic to convert the process of generating medical reports from primitive software to specialized one, with the aim of speeding up that process and reducing errors resulting from incorrect entries. The application can be exported to any computer operating system.
+
+</p>
+    </div>
+</div>
+
+
+            </div>
+          </div>
+  <div class="px-4 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words my-6"
+            >
+        <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/ERPSystem.png" alt="ERP System" onclick="openLightbox(this)">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">ERP System</h2>
+        <p class="mb-3 font-normal text-white">
+Where we contributed to building a huge web application for managing a famous construction company in Malaysia. The app has modules for managing users, assets, and workflow.
+
+</p>
+    </div>
+</div>
+
+
+            </div>
+          </div>
+        </div>
+</div>
+
+</section>
+
 
 
     <section class="bg-blueGray-200 py-20 section-3">
 <div class="text-center my-6" id="من-نحن">
             <h4
 
-              class="my-10 text-3xl font-bold text-gray-900 dark:text-white transition"
+              class="my-10 text-3xl font-bold text-gray-900 transition"
             >
              About Us
    
             </h4>
           </div>
-  <div class="py-8 px-4 w-3/4 m-auto bg-gray-100  dark:bg-gray-800 dark:text-white p-4 rounded-lg shadow-md lg:py-16 lg:px-6">
+    <div class="py-8 px-4 w-3/4 m-auto bg-gray-100  p-4 rounded-lg shadow-md lg:py-16 lg:px-6" style="background-image: radial-gradient(#04516a, #261329);">
 
   
-      <div class="mx-auto max-w-screen-md px-8 sm:text-center">
+      <div class="mx-auto max-w-screen-md px-8 sm:text-center leading-8" style="color: wheat;">
 
-          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-base dark:text-gray-400">
+          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-base">
  <p class="text-muted">
 Established in 2012, Rawaj Al-
 Itqan has experienced consistent
@@ -1237,6 +1345,75 @@ construction sector.
     </div>
 </section>
 
+    <style>
+.my-float{
+	margin-top:16px;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+        
+    	right:40px;
+    
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+</style>
+<a href="https://wa.me/966541193545" class="float" target="_blank">
+<i class="fab fa-whatsapp my-float"></i>
+</a>
+
+
+<!-- scripts for lazyload and enlarging portfolio images -->
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let lazyloadImages = document.querySelectorAll(".lazyload");
+
+        const lazyload = function() {
+            let scrollTop = window.pageYOffset;
+
+            lazyloadImages.forEach(function(img) {
+                if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove("lazyload");
+                }
+            });
+
+            cleanLazyImages();
+        };
+
+        const cleanLazyImages = function() {
+            lazyloadImages = Array.prototype.filter.call(lazyloadImages, function(img) {
+                return img.classList.contains("lazyload");
+            });
+        };
+
+        window.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+
+        lazyload();
+    });
+
+function openLightbox(img) {
+    document.getElementById("lightbox").classList.add("show");
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("show");
+}
+</script>
 
       <div class="flex flex-col">
 

@@ -91,7 +91,7 @@
 </style>
 
 <nav
-  class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+  class="sticky top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 bg-slate-900" style="background-image: radial-gradient(#280e23, #000000ad);"
 >
 
 
@@ -117,12 +117,12 @@
           <a
            
             class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            href="/"
+            href="/en"
           >
             <img
               src="/img/RIIT.png"
               alt="Logo"
-              width="100"
+              width="50"
               height="50"
             />
           </a>
@@ -254,8 +254,6 @@ Transform your traditional home into a smart home
         </div>
     
      <style>
-
-
 .my-float{
 	margin-top:16px;
 }
@@ -275,12 +273,55 @@ Transform your traditional home into a smart home
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
-
 </style>
-
 <a href="https://wa.me/966541193545" class="float" target="_blank">
 <i class="fab fa-whatsapp my-float"></i>
 </a>
+
+
+<!-- scripts for lazyload and enlarging portfolio images -->
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let lazyloadImages = document.querySelectorAll(".lazyload");
+
+        const lazyload = function() {
+            let scrollTop = window.pageYOffset;
+
+            lazyloadImages.forEach(function(img) {
+                if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove("lazyload");
+                }
+            });
+
+            cleanLazyImages();
+        };
+
+        const cleanLazyImages = function() {
+            lazyloadImages = Array.prototype.filter.call(lazyloadImages, function(img) {
+                return img.classList.contains("lazyload");
+            });
+        };
+
+        window.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+
+        lazyload();
+    });
+
+function openLightbox(img) {
+    document.getElementById("lightbox").classList.add("show");
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("show");
+}
+</script>
 
 <!-- Services -->
  <section

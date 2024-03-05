@@ -56,7 +56,6 @@ body {
 nav li {
   padding: 8px 8px 8px 8px;
   text-decoration: none;
-  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -1051,10 +1050,7 @@ select {
 .bg-red {
   background-color: #ff8667;
 }
-.dark .dark\:bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: #841d03;
-}
+
 .bg-red-400 {
   background-color: rgb(248 113 113);
 }
@@ -1230,15 +1226,7 @@ select {
   --tw-border-opacity: 1;
   border-color: rgba(228, 228, 231, var(--tw-border-opacity));
 }
-.dark .dark\:border-gray-700 {
-  border-color: rgba(55, 65, 81, 1);
-}
-.dark .dark\:bg-gray-800 {
-  background-color: rgba(39, 48, 61, 1);
-}
-.dark .dark\:bg-gray {
-  background-color: #27303d;
-}
+
 .pb-8 {
   padding-bottom: 2rem; /* 32px */
 }
@@ -1843,9 +1831,7 @@ select {
 .h-2 {
   height: 0.5rem;
 }
-.dark .dark\:text-orange-200 {
-  color: rgb(254 215 170);
-}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -2020,9 +2006,7 @@ background-color: rgb(0, 125, 159);
 .hover\:bg-green-400:hover {
   background-color: rgb(74 222 128);
 }
-.dark .dark\:hover\:bg-gray-600:hover {
-  background-color: rgb(75 85 99);
-}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.6rem;
@@ -2111,12 +2095,7 @@ text-shadow: #009fff 0px 0px 10px;
 .bg-green-500 {
   background-color: rgb(34 197 94);
 }
-.dark .dark\:bg-indigo-900 {
-  background-color: rgb(49 46 129);
-}
-.dark .dark\:bg-indigo-900-transparent {
-  background-color: rgba(123, 241, 247, 0.24);
-}
+
 .m-8 {
   margin: 2rem;
 }
@@ -2287,9 +2266,7 @@ textarea[id^="form-field_"] {
 .light-tirikiwaz{
  background-color: #35c4b2;
 }
-.dark .dark\:tirikiwaz {
-   background-color: #115149;
-}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2691,17 +2668,7 @@ textarea[id^="form-field_"] {
     outline-color: rgba(53, 120, 196, 0.75);
 }
 
-.dark\:bg-primary-600 {
-    background-color: #4a90e2;
-}
 
-.dark\:hover\:bg-primary-700:hover {
-    background-color: #3578c4;
-}
-
-.dark\:focus\:ring-primary-800:focus {
-    outline-color: rgba(53, 120, 196, 0.75);
-}
 .bg-primary-700 {
     background-color: #4a90e2;
 }
@@ -4749,15 +4716,7 @@ line-height: 3rem;
 .to-indigo-500 {
   --tw-gradient-to: #6366f1;
 }
-.dark .dark\:to-darkblue {
-  --tw-gradient-to: #19264f;
-}
-.dark .dark\:bg-paths {
- background-color: #2f394d;
-}
-.dark .dark\:text-paths {
- color: #2f394d;
-}
+
 .via-purple-500 {
   --tw-gradient-to: rgb(168 85 247);
   --tw-gradient-stops: var(--tw-gradient-from), #a855f7, var(--tw-gradient-to);
@@ -4767,11 +4726,7 @@ line-height: 3rem;
   --tw-gradient-to: #a855f7;
   /* --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); */
 }
-.dark .dark\:from-indigo-article {
-  --tw-gradient-from: #264653;
 
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
 .border-teal-500 {
   border-color: rgb(20 184 166);
 }
@@ -4989,32 +4944,14 @@ hr.style-seven:before {
 .transition {
   transition: 0.3s;
 }
-.dark-checkbox {
-  opacity: 0;
-  position: absolute;
-}
 
-.dark-label {
-  width: 2.5rem;
-  height: 1rem;
-  background-color: #0f6056;
-  display: flex;
-  border-radius: 50px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  position: relative;
-  transform: scale(1.5);
-}
 .tirikiwaz {
  background-color: #1088aa;
 }
 .text-tirikiwaz {
   color: #096f62;
 }
-.dark .dark\:text-tirikiwaz {
-  color: #00a893;
-}
+
 .ball {
   width: 1rem;
   height: 1rem;
@@ -5025,20 +4962,6 @@ hr.style-seven:before {
   transition: transform 0.2s linear;
 }
 
-/*  target the elemenent after the label*/
-.dark-checkbox:checked + .dark-label .ball {
-  transform: translateX(-18px);
-}
-
-.fa-moon {
-  color: white;
-  font-size: 0.8rem;
-}
-
-.fa-sun {
-  color: white;
-  font-size: 0.8rem;
-}
 .card-boder {
   border-width: 3px;
   border-color: #6aa3c9;
@@ -5050,9 +4973,7 @@ hr.style-seven:before {
 .text-slate-300 {
   color: rgb(203 213 225);
 }
-.dark .dark\:text-slate-300 {
-  color: rgb(203 213 225);
-}
+
 .ribbon {
   width: 150px;
   height: 150px;
@@ -5104,12 +5025,7 @@ hr.style-seven:before {
   top: 30px;
   transform: rotate(-45deg);
 }
-.dark .dark\:bg-card-blue {
-  background-color: #34465e70;
-}
-.dark-blue {
-  background-color: #1f2937;
-}
+
 .w-32 {
   width: 8rem;
 }
@@ -5119,15 +5035,7 @@ hr.style-seven:before {
 .bg-slate-800 {
   background-color: rgb(30 41 59);
 }
-.dark .dark\:bg-slate-800 {
-  background-color: rgb(30 41 59);
-}
-.dark .dark\:bg-emerald-950 {
-  background-color: #111827;
-}
-.dark .dark\:text-emerald-950 {
-  color: #111827;
-}
+
 .bg-card-blue {
   background-color: #6aa3c9;
 }
@@ -5439,13 +5347,6 @@ blockquote span {
   padding: 1.5rem;
 }
 
-,dark .dark\:bg-blue-200 {
-  background-color: #93c5fd;
-}
-
-.dark .dark\:text-blue-800 {
-  color: #1e40af;
-}
 
 .font-medium {
   font-weight: 500;
@@ -5460,16 +5361,8 @@ blockquote span {
   background-color: #2d3748;
 }
 
-.dark .dark\:bg-gray-500 {
-  background-color: #a0aec0;
-}
-
 .text-gray-500 {
   color: #6b7280;
-}
-
-.dark .dark\:text-gray-400 {
-  color: #cbd5e0;
 }
 
 .text-blue-600 {
@@ -5480,18 +5373,11 @@ blockquote span {
   text-decoration: underline;
 }
 
-.dark .dark\:text-blue-500 {
-  color: #4299e1;
-}
-
 
 .text-gray-500 {
   color: #6b7280;
 }
 
-.dark .dark\:text-gray-400 {
-  color: #cbd5e0;
-}
 
 .bg-gray-200 {
   background-color: #edf2f7;
@@ -5503,16 +5389,59 @@ blockquote span {
   height: 0.625rem;
 }
 
-.dark .dark\:bg-gray-700 {
-  background-color: #4a5568;
-}
-
 .bg-blue-600 {
   background-color: #3182ce;
 }
 .bg-blue-300 {
   	background-color: rgb(147 197 253);
 }
-.dark .dark\:bg-blue-500 {
-  background-color: #4299e1;
+
+
+/*  portfolio enlarge images  */
+.card-img {
+
+    cursor: pointer;
+
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.0s ease; /* Transition for opacity */
+}
+
+.lightbox.show {
+    display: block;
+    opacity: 1;
+}
+
+.lightbox-img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 5%;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transition for opacity */
+}
+
+.lightbox.show .lightbox-img {
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }

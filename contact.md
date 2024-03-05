@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Contact us"
+title: "طلب خدمة"
 ---
 
 {% include contact-form.html %}

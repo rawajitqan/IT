@@ -216,7 +216,7 @@ if (x.className.includes("responsive")) {
     <div id="large-header" class="large-header">
   <canvas id="demo-canvas"></canvas>
 <div
-          class="relative flex content-center items-center justify-center min-h-screen bg-center bg-cover" style='background-image: url("assets/data-center-8026827_1920.webp");'
+          class="relative flex content-center items-center justify-center min-h-screen bg-center bg-cover" style='background-image: url("/assets/data-center-8026827_1920.webp");'
         >
      <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
           <div class="container relative mx-auto">
@@ -437,7 +437,7 @@ if (x.className.includes("responsive")) {
         
           <a class="page-link" href="/careers/">وظائف</a>
         
-          <a class="page-link" href="/contact/">Contact us</a>
+          <a class="page-link" href="/contact/">طلب خدمة</a>
         
           <a class="page-link" href="/en/">Rawaj IT Co.</a>
         
@@ -463,8 +463,6 @@ if (x.className.includes("responsive")) {
 
 
      <style>
-
-
 .my-float{
 	margin-top:16px;
 }
@@ -484,12 +482,55 @@ if (x.className.includes("responsive")) {
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
 }
-
 </style>
-
 <a href="https://wa.me/966541193545" class="float" target="_blank">
 <i class="fab fa-whatsapp my-float"></i>
 </a>
+
+
+<!-- scripts for lazyload and enlarging portfolio images -->
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let lazyloadImages = document.querySelectorAll(".lazyload");
+
+        const lazyload = function() {
+            let scrollTop = window.pageYOffset;
+
+            lazyloadImages.forEach(function(img) {
+                if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove("lazyload");
+                }
+            });
+
+            cleanLazyImages();
+        };
+
+        const cleanLazyImages = function() {
+            lazyloadImages = Array.prototype.filter.call(lazyloadImages, function(img) {
+                return img.classList.contains("lazyload");
+            });
+        };
+
+        window.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+
+        lazyload();
+    });
+
+function openLightbox(img) {
+    document.getElementById("lightbox").classList.add("show");
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("show");
+}
+</script>
 
     <style>
 a.button.one::after {
@@ -1128,7 +1169,8 @@ a.button.one:hover:before, a.button.one:hover:after{
         </div>
 </section>
 
-    <section class="bg-blueGray-200 py-4 section-3">
+    
+<section class="bg-blueGray-200 py-4 section-3">
 <div class="text-center my-6" id="أعمالنا">
             <h1
 
@@ -1143,8 +1185,8 @@ a.button.one:hover:before, a.button.one:hover:after{
       <div class="mx-auto max-w-screen-md sm:text-center">
 <div class="flex flex-wrap items-center">
           <div class="px-4 mr-auto ml-auto">
-    <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
-    <img class="lazyload max-h-40 w-full align-middle object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/qaraween1.png" alt="Qaraween-learning-platform">
+    <div class="card flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
+    <img class="lazyload card-img max-h-40 w-full align-middle object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/qaraween1.png" alt="Qaraween-learning-platform" onclick="openLightbox(this)">
     <div class="flex flex-col justify-between p-4 leading-normal">
         <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">منصة القرويين التعليمية</h2>
         <p class="mb-3 font-normal text-white">حيث تم بتصميم وتنفيذ تطبيق وب متكامل لمنصة تعليمية.</p>
@@ -1154,15 +1196,20 @@ a.button.one:hover:before, a.button.one:hover:after{
 </div>
          
           </div>
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img src="" alt="Enlarged Image" class="lightbox-img mr-auto ml-auto transition" id="lightbox-img">
+</div>
 
           <div class="px-4 mr-auto ml-auto">
             <div
               class="relative flex flex-col min-w-0 break-words my-6"
             >
         <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
-    <img class="lazyload object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/Ihsan-theme.png" alt="">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/Ihsan-theme.png" alt="قالب-مدونة" onclick="openLightbox(this)">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white absolute top-5">قالب مدونة</h2>
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">قالب مدونة</h2>
         <p class="mb-3 font-normal text-white">قالب مدونة مع شريط جانبي متوافق مع SEO ويدعم AMP ويعرض زمن قراءة كل منشور ومعلومات الكاتب والمنشورات ذات الصلة بناء على الوسوم، ويدعم إحصائيات وإعلانات جوجل.</p>
     </div>
 </div>
@@ -1176,9 +1223,9 @@ a.button.one:hover:before, a.button.one:hover:after{
               class="relative flex flex-col min-w-0 break-words my-6"
             >
         <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
-    <img class="lazyload object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/mobile-game.png" alt="">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/mobile-game.png" alt="لعبة موبايل" onclick="openLightbox(this)">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white absolute top-5">لعبة موبايل</h2>
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">لعبة موبايل</h2>
         <p class="mb-3 font-normal text-white">
 لعبة للموبايل بسيناريو لقصة صلاح الدين الأيوبي. يمر اللاعب بعدة مراحل، حيث يكون لكل مرحلة موقعها الجغرافي على الخريطة. على اللاعب السيطرة على جميع المناطق المحيطة بالقدس وبحسب السيناريو التاريخي، لينتهي أخيرًا بمرحلة القدس. تم بناء اللعبة بواسطة أحد محركات الألعاب الشهيرة بحيث يمكن تصديرها ﻷي منصة، سواء لمتاجر جوجل وأبل أو لمنصة ستيم وغيرها.
 </p>
@@ -1194,9 +1241,9 @@ a.button.one:hover:before, a.button.one:hover:after{
               class="relative flex flex-col min-w-0 break-words my-6"
             >
         <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
-    <img class="lazyload object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/homebook.png" alt="">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/homebook.png" alt="تطبيق موبايل" onclick="openLightbox(this)">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white absolute top-5">تطبيق موبايل</h2>
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">تطبيق موبايل</h2>
         <p class="mb-3 font-normal text-white">
 تطبيق موبايل تم إنجازه مع فريق من المهندسين هدفه حساب وتوزيع تكاليف المعيشة بين المقيمين في السكن المشترك. تم بناء التطبيق خصيصًا لنظام أندرويد.
 </p>
@@ -1212,9 +1259,9 @@ a.button.one:hover:before, a.button.one:hover:after{
               class="relative flex flex-col min-w-0 break-words my-6"
             >
         <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
-    <img class="lazyload object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/INF202.png" alt="">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/INF202.png" alt="تطبيق حاسوب" onclick="openLightbox(this)">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white absolute top-5">تطبيق حاسوب</h2>
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">تطبيق حاسوب</h2>
         <p class="mb-3 font-normal text-white">
 تطبيق حاسوب صغير صُنع بطلب من مستوصف لتحويل عملية إنشاء التقارير الطبية من البرامج البدائية إلى برنامج مختص، بهدف تسريع تلك العملية وتقليل الأخطاء الناجمة عن إدخالات غير صحيحة. يمكن تصدير التطبيق ﻷي نظام تشغيل للحاسوب.
 </p>
@@ -1229,9 +1276,9 @@ a.button.one:hover:before, a.button.one:hover:after{
               class="relative flex flex-col min-w-0 break-words my-6"
             >
         <div class="flex flex-col items-center bg-sky-600 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-sky-500 min-h-20">
-    <img class="lazyload object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/ERPSystem.png" alt="">
+    <img class="lazyload card-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" data-src="/assets/img/portfolio/ERPSystem.png" alt="تطبيق إدارة" onclick="openLightbox(this)">
     <div class="flex flex-col justify-between p-4 leading-normal">
-        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white absolute top-5">تطبيق إدارة</h2>
+        <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">تطبيق إدارة</h2>
         <p class="mb-3 font-normal text-white">
 حيث تم المساهمة في بناء تطبيق وب ضخم لإدارة شركة بناء شهيرة في ماليزيا. يحوي التطبيق أقسامًا لإدارة المستخدمين والممتلكات والأعمال.
 </p>
@@ -1246,44 +1293,13 @@ a.button.one:hover:before, a.button.one:hover:after{
 
 </section>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let lazyloadImages = document.querySelectorAll(".lazyload");
-
-        const lazyload = function() {
-            let scrollTop = window.pageYOffset;
-
-            lazyloadImages.forEach(function(img) {
-                if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                    img.src = img.dataset.src;
-                    img.classList.remove("lazyload");
-                }
-            });
-
-            cleanLazyImages();
-        };
-
-        const cleanLazyImages = function() {
-            lazyloadImages = Array.prototype.filter.call(lazyloadImages, function(img) {
-                return img.classList.contains("lazyload");
-            });
-        };
-
-        window.addEventListener("scroll", lazyload);
-        window.addEventListener("resize", lazyload);
-        window.addEventListener("orientationChange", lazyload);
-
-        lazyload();
-    });
-</script>
-
 
 
     <section class="bg-blueGray-200 py-20 section-3">
 <div class="text-center my-6" id="من-نحن">
             <h4
 
-              class="my-10 text-3xl font-bold text-gray-900 dark:text-white transition"
+              class="my-10 text-3xl font-bold text-gray-900 transition"
             >
              عن الشركة
    

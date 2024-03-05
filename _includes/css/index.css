@@ -3478,7 +3478,7 @@ line-height: 3rem;
 
 .hover\:text-blueGray-800:hover {
   --tw-text-opacity: 1;
-  color: rgba(30, 41, 59, var(--tw-text-opacity));
+color: rgb(165 243 252);
 }
 
 .truncate {

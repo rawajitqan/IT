@@ -1646,6 +1646,12 @@ select {
 .min-h-20 {
  min-height: 20rem;
 }
+.min-h-26 {
+ min-height: 26rem;
+}
+.min-h-28 {
+ min-height: 28rem;
+}
 .items-baseline {
   align-items: baseline;
 }
@@ -3999,7 +4005,9 @@ color: rgb(165 243 252);
   .md\:block {
     display: block;
   }
-
+    .md\:m-h-13{
+  min-height: 13rem;
+}
   .md\:flex {
     display: flex;
   }
@@ -4080,7 +4088,9 @@ color: rgb(165 243 252);
   .md\:min-h-full {
     min-height: 100%;
   }
-
+.md\:min-h-23 {
+    min-height: 23rem;
+  }
   .md\:min-w-full {
     min-width: 100%;
   }
@@ -4154,6 +4164,12 @@ color: rgb(165 243 252);
   }
 
   .md\:w-64 {
+    width: 16rem;
+  } 
+    .md\:w-14 {
+    width: 14rem;
+  }
+ .md\:w-16 {
     width: 16rem;
   }
   .md\:w-48 {

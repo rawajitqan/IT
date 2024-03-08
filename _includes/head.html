@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% if page.url contains "/en" %}
+    <meta name="title" content="Rawaj IT Co." />
     <meta name="description" content="Specialized engineers dedicated to adapting the latest technologies to serve you">
     {% else %}
+    <meta name="title" content="شركة رواج الإتقان لتقنية المعلومات" />
     <meta name="description" content="{{ site.description }}">
     {% endif %}
+    <!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rawajit.com/" />
+<meta property="og:title" content="شركة رواج الإتقان لتقنية المعلومات" />
+<meta property="og:description" content="مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك" />
+<meta property="og:image" content="https://rawajit.com/img/RIIT.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://rawajit.com/" />
+<meta property="twitter:title" content="شركة رواج الإتقان لتقنية المعلومات" />
+<meta property="twitter:description" content="مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك" />
+<meta property="twitter:image" content="https://rawajit.com/img/RIIT.png" />
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="shortcut icon" href="{{ site.url }}/img/favicon.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/img/favicon.png" />

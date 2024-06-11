@@ -2484,6 +2484,9 @@ textarea[id^="form-field_"] {
 .max-h-40 {
   max-height: 10rem; /* 160px */
 }
+.max-h-60 {
+  max-height: 15rem; 
+}
 .object-fill {
   -o-object-fit: fill;
   object-fit: fill;

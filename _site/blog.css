@@ -22,19 +22,11 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-@font-face {
-  font-family: sahlnaskh;
-  src: url("/assets/sahlnaskh-regular.ttf");
-}
-@font-face {
-  font-family: sahlnaskh;
-  src: url("/assets/sahlnaskh-bold.ttf");
-  font-weight: bold;
-}
+
 body {
   margin: 0;
   direction: rtl;
-font-family: sahlnaskh, cairo, system-ui, -apple-system,
+font-family: Cairo, system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }

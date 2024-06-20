@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+
+    <meta content="شركة رواج الإتقان لتقنية المعلومات" property="og:site_name">
+  
+    <meta content="الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/blog/%D8%A3%D9%86%D9%88%D8%A7%D8%B9-%D9%88%D9%87%D9%8A%D9%83%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA/" property="og:url">
+  
+  
+    <meta content="2024-06-20T00:00:00+03:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/أنواع-وهيكليات-الشبكات.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="بنية تحتية" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@rawaj_it">
+  
+    <meta name="twitter:title" content="الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/blog/%D8%A3%D9%86%D9%88%D8%A7%D8%B9-%D9%88%D9%87%D9%8A%D9%83%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA/">
+  
+  
+    <meta name="twitter:description" content="مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/أنواع-وهيكليات-الشبكات.jpg">
+  
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="shortcut icon" href="http://localhost:4000/img/favicon.png" />
+  <link rel="stylesheet" href="/blog.css">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPBL70VHR4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VPBL70VHR4');
+</script>
+
+
+
+</head>
+
+     <style>
+.my-float{
+	margin-top:16px;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+        
+	left:40px;
+    
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+</style>
+<a href="https://wa.me/966541193545" class="float" target="_blank" aria-label="WhatsApp button">
+<i class="fab fa-whatsapp my-float"></i>
+</a>
+
+
+<!-- scripts for lazyload and enlarging portfolio images -->
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let lazyloadImages = document.querySelectorAll(".lazyload");
+
+        const lazyload = function() {
+            let scrollTop = window.pageYOffset;
+
+            lazyloadImages.forEach(function(img) {
+                if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove("lazyload");
+                }
+            });
+
+            cleanLazyImages();
+        };
+
+        const cleanLazyImages = function() {
+            lazyloadImages = Array.prototype.filter.call(lazyloadImages, function(img) {
+                return img.classList.contains("lazyload");
+            });
+        };
+
+        window.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+
+        lazyload();
+    });
+
+function openLightbox(img) {
+    document.getElementById("lightbox").classList.add("show");
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("show");
+}
+</script>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/RIIT.png" alt="رواج الإتقان لتقنية المعلومات"></a>
+      </div>
+      <div class="author-name">رواج الإتقان لتقنية المعلومات</div>
+      <p>مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">تواصل معنا</h3>
+      <ul>
+         
+                        <li><a href="https://www.linkedin.com/company/rawaj-it" target="_blank">
+        
+<i class="fab fa-linkedin"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://twitter.com/rawaj_it" target="_blank">
+        
+    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.facebook.com/rawaj.information.technology" target="_blank">
+        
+<i class="fab fa-facebook"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.instagram.com/rawaj_it/" target="_blank">
+        
+<i class="fab fa-instagram"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.tiktok.com/@rawaj_it" target="_blank">
+        
+<i class="fab fa-tiktok"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.youtube.com/@rawajit" target="_blank">
+        
+<i class="fab fa-youtube"></i>
+
+</a>
+                        </li>
+                        
+        
+          <li class="email"><a href="mailto:mirsal@rawajit.com"><i class="fa fa-envelope"></i></a></li>
+      
+        
+ <li class="github"><a href="/feed.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>رواج الإتقان لتقنية المعلومات &copy; 2024 </p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/أنواع-وهيكليات-الشبكات.jpg alt="الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <div class="button2" style="text-align: center">
+          <a class="ampstart-btn" href="http://localhost:4000/blog/">
+             &#8674; الرجوع للمدونة</a>
+        </div><br><br>
+        <h1 class="page-title">الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل</h1>
+        <div class="page-date"><span>2024, Jun 20&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>تلعب الشبكات دورًا حيويًا في عصر التكنولوجيا والمعلومات، حيث تربط بين الأجهزة المختلفة وتتيح تبادل البيانات بينها. تعد الشبكات الأساس الذي تعتمد عليه أنظمة الاتصالات الحديثة، سواء في المنازل أو المؤسسات أو حتى على مستوى العالم. يهدف هذا المقال إلى استعراض هيكليات الشبكات المختلفة، والفرق بينها، وتقديم إرشادات حول كيفية اختيار الشبكة الأنسب لاحتياجاتك.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#أنواع-الشبكات" id="markdown-toc-أنواع-الشبكات">أنواع الشبكات</a></li>
+  <li><a href="#هيكليات-الشبكات" id="markdown-toc-هيكليات-الشبكات">هيكليات الشبكات</a></li>
+  <li><a href="#الفرق-بين-هيكليات-الشبكات" id="markdown-toc-الفرق-بين-هيكليات-الشبكات">الفرق بين هيكليات الشبكات</a></li>
+  <li><a href="#كيفية-اختيار-الهيكلية-الأفضل" id="markdown-toc-كيفية-اختيار-الهيكلية-الأفضل">كيفية اختيار الهيكلية الأفضل</a></li>
+  <li><a href="#الخاتمة" id="markdown-toc-الخاتمة">الخاتمة</a></li>
+</ul>
+
+<h1 id="أنواع-الشبكات">أنواع الشبكات</h1>
+
+<p>تُصنَّف الشبكات إلى عدة أنواع بناءً على نطاقها الجغرافي ووظائفها، وأهم هذه الأنواع هي:</p>
+
+<ol>
+  <li>
+    <p><strong>الشبكة المحلية (LAN)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تربط أجهزة الحاسوب داخل مساحة جغرافية محدودة مثل المنزل أو المكتب.</li>
+      <li><strong>مزاياها</strong>: سرعة عالية، تكاليف منخفضة، وسهولة في الإدارة.</li>
+      <li><strong>استخداماتها</strong>: تُستخدم في البيئات المنزلية والشركات الصغيرة.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>الشبكة المدنية (MAN)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تغطي مدينة أو منطقة كبيرة.</li>
+      <li><strong>مزاياها</strong>: تدعم اتصالات عالية السرعة على نطاق أوسع من LAN.</li>
+      <li><strong>استخداماتها</strong>: تُستخدم في الجامعات والمؤسسات الحكومية التي تحتاج إلى ربط مبانٍ متعددة داخل مدينة واحدة.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>الشبكة الواسعة (WAN)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تربط أجهزة الحاسوب عبر مسافات جغرافية كبيرة مثل الدول أو القارات.</li>
+      <li><strong>مزاياها</strong>: قادرة على دعم عدد كبير من المستخدمين والأجهزة.</li>
+      <li><strong>استخداماتها</strong>: تُستخدم في الشركات العالمية والمؤسسات الكبيرة التي تحتاج إلى ربط فروعها في مواقع مختلفة.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>الشبكة الشخصية (PAN)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تغطي مساحة صغيرة جدًا مثل المساحة المحيطة بفرد.</li>
+      <li><strong>مزاياها</strong>: سهلة الإعداد، ومناسبة للاستخدامات الشخصية.</li>
+      <li><strong>استخداماتها</strong>: تُستخدم لربط الأجهزة الشخصية مثل الهواتف الذكية والحواسيب المحمولة والساعات الذكية.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="هيكليات-الشبكات">هيكليات الشبكات</h1>
+
+<p>تعتمد الشبكات على عدة هيكليات لتحديد كيفية اتصال الأجهزة ببعضها البعض، وأهم هذه الهيكليات هي:</p>
+
+<ol>
+  <li>
+    <p><strong>هيكلية النجم (Star Topology)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تتصل جميع الأجهزة بنقطة مركزية واحدة مثل جهاز توجيه أو مفتاح.</li>
+      <li><strong>مزاياها</strong>: سهولة الإعداد والإدارة، ومعرفة مكان العطل بسهولة.</li>
+      <li><strong>عيوبها</strong>: إذا تعطل الجهاز المركزي، تتوقف الشبكة بأكملها عن العمل.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>هيكلية الحلقة (Ring Topology)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تتصل الأجهزة في سلسلة دائرية، حيث تنتقل البيانات في حلقة.</li>
+      <li><strong>مزاياها</strong>: أداء ثابت وسرعة عالية لنقل البيانات.</li>
+      <li><strong>عيوبها</strong>: إذا تعطل جهاز واحد، يمكن أن تتوقف الشبكة بالكامل.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>هيكلية الناقل (Bus Topology)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تتصل جميع الأجهزة بكابل رئيسي واحد يُعرف بالناقل.</li>
+      <li><strong>مزاياها</strong>: تكاليف منخفضة وسهولة في الإعداد.</li>
+      <li><strong>عيوبها</strong>: صعوبة في استكشاف الأخطاء وإصلاحها، وانخفاض الأداء عند زيادة عدد الأجهزة.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>هيكلية الشبكة (Mesh Topology)</strong>:</p>
+
+    <ul>
+      <li><strong>تعريفها</strong>: تتصل كل جهاز بجميع الأجهزة الأخرى.</li>
+      <li><strong>مزاياها</strong>: موثوقية عالية وأداء ممتاز.</li>
+      <li><strong>عيوبها</strong>: تكاليف مرتفعة وتعقيد في الإعداد والإدارة.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="الفرق-بين-هيكليات-الشبكات">الفرق بين هيكليات الشبكات</h1>
+
+<p>كل هيكلية شبكة تتميز بمزايا وعيوب تجعلها مناسبة لاستخدامات معينة. الفرق الرئيسي بين الهيكليات يكمن في كيفية توصيل الأجهزة ونقل البيانات بينها. على سبيل المثال:</p>
+
+<ul>
+  <li>
+    <p><strong>هيكلية النجم</strong> توفر سهولة في الإدارة ولكنها تعتمد على جهاز مركزي واحد.</p>
+  </li>
+  <li>
+    <p><strong>هيكلية الحلقة</strong> توفر أداء ثابت ولكنها تعتمد على جميع الأجهزة لتعمل بشكل صحيح.</p>
+  </li>
+  <li>
+    <p><strong>هيكلية الناقل</strong> تتميز بتكاليف منخفضة ولكنها تعاني من مشاكل في الأداء مع زيادة عدد الأجهزة.</p>
+  </li>
+  <li>
+    <p><strong>هيكلية الشبكة</strong> تقدم أعلى موثوقية ولكن بتكلفة وتعقيد أعلى.</p>
+  </li>
+</ul>
+
+<h1 id="كيفية-اختيار-الهيكلية-الأفضل">كيفية اختيار الهيكلية الأفضل</h1>
+
+<p>اختيار الهيكلية المناسبة يعتمد على عدة عوامل تشمل:</p>
+
+<ol>
+  <li>
+    <p><strong>الاحتياجات الحالية والمستقبلية</strong>:</p>
+
+    <ul>
+      <li>عدد الأجهزة التي تحتاج إلى الاتصال.</li>
+      <li>حجم البيانات التي ستُنقل بين الأجهزة.</li>
+      <li>مدى الاعتماد على الشبكة (هل هي حرجة للعمليات اليومية؟).</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>الميزانية</strong>:</p>
+
+    <ul>
+      <li>تكلفة الإعداد الأولي.</li>
+      <li>تكلفة الصيانة والإدارة على المدى الطويل.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>الأداء والموثوقية</strong>:</p>
+
+    <ul>
+      <li>متطلبات الأداء (سرعة نقل البيانات).</li>
+      <li>مستوى الموثوقية المطلوب (هل يمكن تحمل تعطل الجهاز المركزي؟).</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>سهولة الإدارة والصيانة</strong>:</p>
+
+    <ul>
+      <li>هل لديك فريق تقني لإدارة الشبكة؟</li>
+      <li>مدى تعقيد الشبكة وسهولة اكتشاف الأعطال وإصلاحها.</li>
+    </ul>
+  </li>
+</ol>
+
+<h1 id="الخاتمة">الخاتمة</h1>
+
+<p>تُعد الشبكات جزءًا أساسيًا من البنية التحتية التقنية لأي مؤسسة أو منزل حديث. توفر هيكليات الشبكات المختلفة حلولًا متنوعة تناسب احتياجات مختلفة، من شبكات المنازل الصغيرة إلى الشبكات العالمية الكبيرة. لفهم هذه الهيكليات واختيار الأنسب منها، يجب مراعاة الاحتياجات الخاصة بكل حالة، والميزانية المتاحة، ومتطلبات الأداء والموثوقية. باتباع هذه الإرشادات، يمكن تحقيق بنية شبكية فعالة وموثوقة تلبي احتياجاتك الحالية والمستقبلية.</p>
+
+
+      <div class="page-footer">
+        <div class="page-share">
+شارك هذا المقال على: 
+          <a href="https://x.com/intent/tweet?text=الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل&url=http://localhost:4000/blog/%D8%A3%D9%86%D9%88%D8%A7%D8%B9-%D9%88%D9%87%D9%8A%D9%83%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA/" title="Share on X" rel="nofollow" target="_blank">منصة إكس</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/blog/%D8%A3%D9%86%D9%88%D8%A7%D8%B9-%D9%88%D9%87%D9%8A%D9%83%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA/" title="Share on Facebook" rel="nofollow" target="_blank">فيس بوك</a>
+        
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#بنية تحتية" class="tag">&#35; بنية تحتية</a>
+          
+        </div>
+      </div>
+
+
+  
+  
+
+     
+  
+
+
+    
+    
+    
+
+    
+    
+            
+
+                <h2>اقرأ أيضًا</h2>
+               <div style="display: flex; flex-wrap: wrap; padding: 0 20px;grid-row-gap: 20px;grid-column-gap: 20px;justify-content: space-around; float: right">
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 360px; ">
+  <img height="140" width="180" src=/assets/img/سقف-مستعار-2.webp alt="الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل" alt="الأسقف المستعارة: الجمالية والوظائف العملية في التصميم الداخلي الحديث" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D8%A7%D9%84%D8%A3%D8%B3%D9%82%D9%81-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B9%D8%A7%D8%B1%D8%A9/"><h4 style="margin: 1.5rem">الأسقف المستعارة: الجمالية والوظائف العملية في التصميم الداخلي الحديث</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+    
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 360px; ">
+  <img height="140" width="180" src=/assets/img/hard-disk-2634175_1280.webp alt="الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل" alt="أجهزة النسخ الاحتياطي: أنواعها ومزاياها وكيفية اختيار الأفضل" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%A7%D9%84%D9%86%D8%B3%D8%AE-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D8%B7%D9%8A/"><h4 style="margin: 1.5rem">أجهزة النسخ الاحتياطي: أنواعها ومزاياها وكيفية اختيار الأفضل</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+    
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 360px; ">
+  <img height="140" width="180" src=/assets/img/cloud-computing-1989339_1280.webp alt="الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل" alt="كيفية اختيار مزود الخدمات السحابية الأنسب لمشروعك" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D9%85%D8%B2%D9%88%D8%AF-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A8-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%83/"><h4 style="margin: 1.5rem">كيفية اختيار مزود الخدمات السحابية الأنسب لمشروعك</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+    
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 360px; ">
+  <img height="140" width="180" src=/assets/img/cyberspace-2784907_1280.webp alt="الشبكات: هيكلياتها وأنواعها وكيفية اختيار الأفضل" alt="كيفية اختيار السيرفر المناسب لمؤسستك" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D9%81%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8-%D9%84%D9%85%D8%A4%D8%B3%D8%B3%D8%AA%D9%83/"><h4 style="margin: 1.5rem">كيفية اختيار السيرفر المناسب لمؤسستك</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+        
+
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+
+</body>
+</html>

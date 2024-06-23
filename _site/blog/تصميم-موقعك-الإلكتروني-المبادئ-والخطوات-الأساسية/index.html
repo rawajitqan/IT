@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+
+    <meta content="شركة رواج الإتقان لتقنية المعلومات" property="og:site_name">
+  
+    <meta content="تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/blog/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D9%88%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9/" property="og:url">
+  
+  
+    <meta content="2024-06-21T00:00:00+03:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/تصميم-موقع-الكتروني-عربي.webp" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="وب" property="article:tag">
+    
+    <meta content="دعم" property="article:tag">
+    
+    <meta content="تقنية" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@rawaj_it">
+  
+    <meta name="twitter:title" content="تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/blog/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D9%88%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9/">
+  
+  
+    <meta name="twitter:description" content="مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/تصميم-موقع-الكتروني-عربي.webp">
+  
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="shortcut icon" href="http://localhost:4000/img/favicon.png" />
+  <link rel="stylesheet" href="/blog.css">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPBL70VHR4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VPBL70VHR4');
+</script>
+
+
+
+</head>
+
+     <style>
+.my-float{
+	margin-top:16px;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+        
+	left:40px;
+    
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+</style>
+<a href="https://wa.me/966541193545" class="float" target="_blank" aria-label="WhatsApp button">
+<i class="fab fa-whatsapp my-float"></i>
+</a>
+
+
+<!-- scripts for lazyload and enlarging portfolio images -->
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let lazyloadImages = document.querySelectorAll(".lazyload");
+
+        const lazyload = function() {
+            let scrollTop = window.pageYOffset;
+
+            lazyloadImages.forEach(function(img) {
+                if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove("lazyload");
+                }
+            });
+
+            cleanLazyImages();
+        };
+
+        const cleanLazyImages = function() {
+            lazyloadImages = Array.prototype.filter.call(lazyloadImages, function(img) {
+                return img.classList.contains("lazyload");
+            });
+        };
+
+        window.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+
+        lazyload();
+    });
+
+function openLightbox(img) {
+    document.getElementById("lightbox").classList.add("show");
+    document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("show");
+}
+</script>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/RIIT.png" alt="رواج الإتقان لتقنية المعلومات"></a>
+      </div>
+      <div class="author-name">رواج الإتقان لتقنية المعلومات</div>
+      <p>مهندسين متخصصين ومتفرغين لتطويع أحدث التقنيات لخدمتك</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">تواصل معنا</h3>
+      <ul>
+         
+                        <li><a href="https://www.linkedin.com/company/rawaj-it" target="_blank">
+        
+<i class="fab fa-linkedin"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://twitter.com/rawaj_it" target="_blank">
+        
+    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.facebook.com/rawaj.information.technology" target="_blank">
+        
+<i class="fab fa-facebook"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.instagram.com/rawaj_it/" target="_blank">
+        
+<i class="fab fa-instagram"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.tiktok.com/@rawaj_it" target="_blank">
+        
+<i class="fab fa-tiktok"></i>
+
+</a>
+                        </li>
+                        
+                        <li><a href="https://www.youtube.com/@rawajit" target="_blank">
+        
+<i class="fab fa-youtube"></i>
+
+</a>
+                        </li>
+                        
+        
+          <li class="email"><a href="mailto:mirsal@rawajit.com"><i class="fa fa-envelope"></i></a></li>
+      
+        
+ <li class="github"><a href="/feed.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>رواج الإتقان لتقنية المعلومات &copy; 2024 </p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/تصميم-موقع-الكتروني-عربي.webp alt="تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <div class="button2" style="text-align: center">
+          <a class="ampstart-btn" href="http://localhost:4000/blog/">
+             &#8674; الرجوع للمدونة</a>
+        </div><br><br>
+        <h1 class="page-title">تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية</h1>
+        <div class="page-date"><span>2024, Jun 21&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p>في العصر الرقمي الحالي، يُعد الموقع الإلكتروني الواجهة الرئيسية لأي نشاط تجاري أو شخصي. إن تصميم موقع إلكتروني يتطلب خبرة ودقة لضمان تقديم تجربة مستخدم ممتازة وجذب العملاء. بصفتنا شركة تقنية معلومات متخصصة، نقدم لك نظرة شاملة على المبادئ والخطوات الأساسية لتصميم موقعك الإلكتروني وما نحتاجه منك لضمان سير العملية بالشكل الأمثل والطريقة الهندسية الصحيحة.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#المبادئ-الأساسية-لتصميم-المواقع-الإلكترونية" id="markdown-toc-المبادئ-الأساسية-لتصميم-المواقع-الإلكترونية">المبادئ الأساسية لتصميم المواقع الإلكترونية</a></li>
+  <li><a href="#الخطوات-الأساسية-لتصميم-الموقع" id="markdown-toc-الخطوات-الأساسية-لتصميم-الموقع">الخطوات الأساسية لتصميم الموقع</a></li>
+  <li><a href="#ما-نحتاجه-منك" id="markdown-toc-ما-نحتاجه-منك">ما نحتاجه منك</a></li>
+  <li><a href="#الخاتمة" id="markdown-toc-الخاتمة">الخاتمة</a></li>
+</ul>
+
+<h1 id="المبادئ-الأساسية-لتصميم-المواقع-الإلكترونية">المبادئ الأساسية لتصميم المواقع الإلكترونية</h1>
+
+<ol>
+  <li><strong>فهم الاحتياجات والأهداف</strong></li>
+</ol>
+
+<p>من الضروري أن نبدأ بفهم عميق لاحتياجاتك وأهدافك. سنجري اجتماعًا أو اتصالًا لجمع المعلومات حول رؤيتك للموقع والهدف الرئيسي الذي تريد تحقيقه منه والجمهور المستهدف ووظائف الموقع المطلوبة وعدد صفحات الموقع الأساسية المطلوبة. يحدد لن معرفة ذلك الخدمات التي نريدها مثل خدمة البريد الإلكتروني والاستبيانات وبوابات الدفع الإلكتروني. كذلك نعرف لغات الموقع المطلوبة (باللغة العربية و/أو الإنجليزية وغير ذلك) من الفئة المستهدفة.</p>
+
+<ol>
+  <li><strong>تجربة المستخدم (UX)</strong></li>
+</ol>
+
+<p>تجربة المستخدم الجيدة هي مفتاح نجاح أي موقع. نقوم بتصميم واجهة مستخدم واضحة تسهل على الزائر التنقل والوصول إلى المعلومات المطلوبة بسهولة وسرعة، مع الحفاظ على جمالية التصميم وسهولة قراءة المحتوى، حيث نختار دائمًا مزيج من ألوان النص والخلفية مما يحقق أعلى درجة تباين، وبحيث تتناسب الألوان مع الهدف المطلوب ومع الفئة المستهدف، وطبعًا مع <a href="https://rawajit.com/blog/%D8%A7%D9%84%D9%87%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D9%8A%D8%A9/">الهوية البصرية</a> والتي نقوم بتصميمها لك في حال عدم وجودها.</p>
+
+<ol>
+  <li><strong>التصميم المتجاوب مع جميع الأجهزة (Responsive Design)</strong></li>
+</ol>
+
+<p>من المهم أن يكون الموقع متجاوبًا ويعمل بكفاءة على جميع الأجهزة، بما في ذلك الهواتف الذكية والأجهزة اللوحية. نضمن أن يكون التصميم مرنًا ومناسبًا لمختلف أحجام الشاشات.</p>
+
+<ol>
+  <li><strong>الأداء والسرعة</strong></li>
+</ol>
+
+<p>لا يتحلى مستخدمي الوب اليوم بالصبر، بل يتوقعون تحميل الصفحات المطلوبة بسرعة، وأي تأخير في عرض الصفحة قد يدفع المستخدم لإغلاقها. لذا، نعمل دومًا على تحسين أداء الموقع وتقليل زمن تحميل الصفحات إلى أقصى حد ممكن، ونقدم لك تقرير أداء شامل لموقعك عند التسليم.</p>
+
+<p>يشمل الأداء كذلك الكود النظيف، والذي له تأثير مباشر على مزايا الأمان وقابلية التوسع للموقع. يضمن لك مهندسينا المختصين تسليمك كود نظيف وآمن وقابل للتوسع بسلاسة.</p>
+
+<ol>
+  <li><strong>الأمان</strong></li>
+</ol>
+
+<p>أمان الموقع من أولوياتنا. نستخدم شهادة SSL لدعم بروتوكول HTTPS للاتصال المشفر. كما نضمن حماية بيانات المستخدمين وتأمين الموقع ضد الهجمات الإلكترونية المعروفة.</p>
+
+<ol>
+  <li><strong>البنية اللازمة للتسويق</strong></li>
+</ol>
+
+<p>لا شك أن موقع بدون زوار هو موقع غير ناجح ولا يحقق أهدافه. والتسويق للموقع يجب أن يعتمد على بنية أساسية سليمة للموقع، ويشمل ذلك المحتوى الأساسي والسليم للموقع، والكلمات المفاحية، بالإضافة للعناصر التقنية مثل استخدام الوسوم الوصفية للصفحات واتباع معايير تحسين محركات البحث (SEO)، بالإضافة لتوليد الكود بشكل جاهز من قبل السيرفر أو مايعرف بـ (SSR) بالنسبة لتطبيقات الوب. تضمن كل تلك الإجراءات توافق موقعك مع محركات البحث وظهوره لاحقًا بالنتائج الأولى للبحث، وكذلك ظهور بيانات الصفحات (صورة ووصف مختصر) عند مشاركتها على منصات التواصل. يمكنك الاطلاع على تفاصيل أكثر عن معايير محركات البحث من خلال مقالنا: <a href="https://rawajit.com/blog/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%8A%D9%88-%D9%84%D8%AA%D8%AD%D8%B3%D9%8A%D9%86-%D8%B9%D8%B1%D8%B6-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D9%81%D9%8A-%D9%86%D8%AA%D8%A7%D8%A6%D8%AC-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/">أساسيات السيو لتحسين عرض موقعك في نتائج البحث</a></p>
+
+<h1 id="الخطوات-الأساسية-لتصميم-الموقع">الخطوات الأساسية لتصميم الموقع</h1>
+
+<ol>
+  <li><strong>جمع المتطلبات</strong></li>
+</ol>
+
+<p>أول خطوة هي جمع المتطلبات من العميل. سنطرح أسئلة محددة للحصول على فهم واضح لما تحتاجه من موقعك.
+فالمدونة الإخبارية مثلًا تختلف عن المنصة الترفيهية، وتختلف المواقع الإلكترونية المصممة خصيصاً للمراهقين عن المواقع المطورة للجمهور الناضج. توفر الأنواع المختلفة من المواقع الإلكترونية وظائف مختلفة للزائرين، وبالتالي يتم تحديد التقنيات المطلوبة وفقًا للأغراض. يساعد التخطيط المسبق والجيد في توفير الوقت والجهد والمال ويحميك من إنفاق موارد إضافية على حل المشكلات غير المتوقعة، مثل تغيير التصميم أو إضافة وظائف لم يكن مخططًا لها في البداية.</p>
+
+<ol>
+  <li><strong>التخطيط</strong></li>
+</ol>
+
+<p>حيث نقوم بوضع المخططات المطلوبة للمشروع وفقًا للمعلومات المعطاة والمناقشة مع العميل. حيث يتم وضع خريطة الموقع كما يتم بناء المخططات الأخرى بالنسبة لتطبيقات الوب مثل المتاجر الإلكترونية المخصصة ومنصات إدارة المحتوى وغير ذلك، حيث يتم وضع مخطط قاعدة البيانات والمخططات البرمجية وحالات الاستخدام وتحديد جميع التقنيات الأمثل لمشروعك.</p>
+
+<ol>
+  <li><strong>التحليل والتصميم</strong></li>
+</ol>
+
+<p>في هذه المرحلة، سنبدأ بتصميم الواجهات الأولية (Wireframes) <em>_بما يتوافق مع <a href="https://rawajit.com/blog/%D8%A7%D9%84%D9%87%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D9%8A%D8%A9/">الهوية البصرية</a></em> لتحديد هيكلية الموقع وتوزيع المحتوى. سنشاركك هذه الواجهات للحصول على ملاحظاتك وتعديلاتك.</p>
+
+<ol>
+  <li><strong>التطوير</strong></li>
+</ol>
+
+<p>بعد الموافقة على التصميم، سننتقل إلى مرحلة التنفيذ، حيث نستخدم أحدث التقنيات وأفضل الممارسات البرمجية لضمان أداء عالي وسلاسة في الاستخدام.</p>
+
+<ol>
+  <li><strong>الاختبار والجودة</strong></li>
+</ol>
+
+<p>نقوم بعد الانتهاء من التطوير بإجراء اختبارات شاملة للتأكد من أن الموقع يعمل بشكل صحيح على جميع الأجهزة والمتصفحات المعروفة. ونختبر الأمان والأداء والوظائف (حالات الاستخدام) لضمان جودة عالية للموقع.</p>
+
+<ol>
+  <li><strong>الإطلاق والمتابعة</strong></li>
+</ol>
+
+<p>بمجرد اجتياز الموقع جميع الاختبارات، نقوم بإطلاقه. يتطلب الإطلاق بالنسبة لتطبيقات الوب مهندس متمرس ليقوم أولًا بتصدير التطبيق بالشكل الصحيح وتهيئة السيرفر المطلوب تنصيب التطبيق عليه بالشكل الصحيح أيضًا، ثم تنصيب التطبيق وتهيئة جميع الإعدادات اللازمة لضمان عمل التطبيق وربطه مع النطاق (domain) بالشكل السليم والآمن.</p>
+
+<p>إن عدم تهبئة الإعدادات بالشكل السليم قد يؤدي ﻷخطاء كثيرة ومشاكل في الأداء والأمان، منها مثلًا عدم أرشفة محركات البحث للصفحات الرئيسية المطلوب أرشفتها وعرضها في نتائج البحث، أو أرشفة صفحات خاصة بالإدارة يجب عدم أرشفتها من قبل محركات البحث. من المشاكل الشائعة كذلك أن يتم التهيئة بحيث يعمل الموقع فقط بإدخال www قبل الاسم، أو فقط بدون www، بحيث لو تم إدخال www (مثلًا عبر الاختصار ctrl + Enter الشائع في المتصفحات) لا يتم الوصول للموقع ويظهر وكأنه خارج الخدمة، هذا بالإضافة للعديد من الأخطاء اللانهائية التي يمكن أن تحدث نتيجة عدم ضبط السيرفر وإعداداته وإعدادات التطبيق وما يوصل إليه بالشكل الصحيح.</p>
+
+<p>وأخيرًا، نستمر في متابعة أداء الموقع وتقديم الدعم الفني والتحديثات اللازمة عند الطلب.</p>
+
+<h1 id="ما-نحتاجه-منك">ما نحتاجه منك</h1>
+
+<ol>
+  <li><strong>رؤية واضحة</strong></li>
+</ol>
+
+<p>نحتاج إلى فهم رؤيتك وأهدافك من الموقع بوضوح. كلما كانت رؤيتك أوضح، كان بإمكاننا تقديم خدمة أفضل.</p>
+
+<ol>
+  <li><strong>المحتوى الأساسي</strong></li>
+</ol>
+
+<p>تقديم المحتوى المطلوب للموقع، بما في ذلك النصوص والصور والفيديوهات، مما يساعدنا في تسريع عملية التصميم والتطوير.</p>
+
+<ol>
+  <li><strong>النقاش المنفتح بجميع المتطلبات والتفاصيل</strong></li>
+</ol>
+
+<p>من المهم التواصل بشكل فعال وعملي وإطلاعنا على كافة التفاصيل التي تريدها صغيرةً كانت أم كبيرة، وذلك خلال مرحلة جمع المعلومات والتخطيط، مما يوفر علينا الكثير من وقت التنفيذ ويضمن أن يكون المنتج النهائي مطابقًا لتوقعاتك.</p>
+
+<h1 id="الخاتمة">الخاتمة</h1>
+
+<p>إن تصميم موقعك الإلكتروني هو عملية تتطلب تضافر الجهود بينك وبين فريقنا التقني. بفهم واضح لاحتياجاتك واتباع الخطوات الهندسية الصحيحة، نضمن لك الحصول على موقع إلكتروني يلبي طموحاتك ويعزز من تواجدك الرقمي. تواصل معنا اليوم لنبدأ رحلتنا معًا نحو تصميم موقعك المثالي.</p>
+
+
+      <div class="page-footer">
+        <div class="page-share">
+شارك هذا المقال على: 
+          <a href="https://x.com/intent/tweet?text=تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية&url=http://localhost:4000/blog/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D9%88%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9/" title="Share on X" rel="nofollow" target="_blank">منصة إكس</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/blog/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8%B9%D9%83-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%A6-%D9%88%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9/" title="Share on Facebook" rel="nofollow" target="_blank">فيس بوك</a>
+        
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#وب" class="tag">&#35; وب</a>
+          
+            <a href="/tags#دعم" class="tag">&#35; دعم</a>
+          
+            <a href="/tags#تقنية" class="tag">&#35; تقنية</a>
+          
+        </div>
+      </div>
+
+
+  
+  
+
+     
+  
+
+
+    
+    
+    
+
+    
+    
+            
+
+                <h2>اقرأ أيضًا</h2>
+               <div style="display: flex; flex-wrap: wrap; padding: 0 20px;grid-row-gap: 20px;grid-column-gap: 20px;justify-content: space-around; float: right">
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 390px; ">
+  <img height="140" width="180" src=/assets/img/security-265130_1280.jpg alt="تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية" alt="تأثير الذكاء الصناعي التوليدي على الأمن السيبراني والخصوصية" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D8%AA%D8%A3%D8%AB%D9%8A%D8%B1-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A-%D8%A7%D9%84%D8%AA%D9%88%D9%84%D9%8A%D8%AF%D9%8A-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A-%D9%88%D8%A7%D9%84%D8%AE%D8%B5%D9%88%D8%B5%D9%8A%D8%A9/"><h4 style="margin: 1.5rem">تأثير الذكاء الصناعي التوليدي على الأمن السيبراني والخصوصية</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+    
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 390px; ">
+  <img height="140" width="180" src=/assets/img/Visual-Identity.jpg alt="تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية" alt="الهوية البصرية: أهميتها وعناصرها وأثرها في تصميم المواقع والتطبيقات" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D8%A7%D9%84%D9%87%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D9%8A%D8%A9/"><h4 style="margin: 1.5rem">الهوية البصرية: أهميتها وعناصرها وأثرها في تصميم المواقع والتطبيقات</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+    
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 390px; ">
+  <img height="140" width="180" src=/assets/img/Operating-Systems.webp alt="تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية" alt="نظرة شاملة على أنظمة التشغيل والمقارنة بينها" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D9%86%D8%B8%D8%B1%D8%A9-%D8%B4%D8%A7%D9%85%D9%84%D8%A9-%D8%B9%D9%84%D9%89-%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B1%D9%86%D8%A9-%D8%A8%D9%8A%D9%86%D9%87%D8%A7/"><h4 style="margin: 1.5rem">نظرة شاملة على أنظمة التشغيل والمقارنة بينها</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+  
+
+
+    
+    
+    
+
+    
+    
+            
+    
+ <div style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;width: 180px; height: 390px; ">
+  <img height="140" width="180" src=/assets/img/pic01.jpg alt="تصميم موقعك الإلكتروني: المبادئ والخطوات الأساسية" alt="أقسام الدعم التقني الشامل: الأساس المتين لنجاح المؤسسات في العصر الرقمي" style="border-radius: 5px 5px 0 0;"></img>
+  <div class="container">
+    <a href="/blog/%D8%A3%D9%82%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A-%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84/"><h4 style="margin: 1.5rem">أقسام الدعم التقني الشامل: الأساس المتين لنجاح المؤسسات في العصر الرقمي</h4></a>
+    
+  </div>
+</div>
+         
+
+      
+        
+
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+
+</body>
+</html>

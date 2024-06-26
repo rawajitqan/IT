@@ -3951,6 +3951,7 @@ color: rgb(165 243 252);
   border: 1px solid grey;
   transition: background 200ms ease-in-out;
   cursor: pointer;
+  font-weight: bold;
 }
 .collapse__header:hover {
   background-color: rgba(11, 50, 112, 0.603);
@@ -5468,3 +5469,21 @@ blockquote span {
     font-weight: bold;
     cursor: pointer;
 }
+
+
+.active:after {
+  content: "\2212";
+}
+
+
+.collapse__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+}
+.collapse__content:not(.hid){  
+  max-height: 150px;
+  padding: 1rem;
+  line-height: 2rem;
+}
+    

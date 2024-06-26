@@ -633,12 +633,53 @@
               <button
                 class="text-white active:bg-green-400 text-xl font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                 type="button" style="  background-color: #4fad49;"
-                >    اطلب خدمة
+                >    اطلب عرض سعر مجاني
               </button>
             </a>
     </div>
+
+<div class="mx-auto w-4/5 my-10">
+  <div class="text-center text-3xl mx-2 mb-8">
+    <span>الأسئلة الشائعة</span>
+  </div>
+  {% for item in site.data.questions %}
+    <div id="collapseheader-{{ forloop.index0 }}" class="collapse__header" onclick="showCollapse({{ forloop.index0 }})">
+      {{ item.question }}
+    </div>
+    <div id="collapse-{{ forloop.index0 }}" class="collapse__content hid">
+<div>
+      {{ item.answer }}
+</div>
+    </div>
+  {% endfor %}
+</div>
+
+
 </section>
-    
+
+
+
+
+<script>
+  let show = null;
+  function showCollapse(index) {
+    const content = document.getElementById('collapse-' + index);
+    const content2 = document.getElementById('collapseheader-' + index);
+    if (show !== null) {
+      const prevContent = document.getElementById('collapse-' + show);
+      prevContent.classList.add('hid');
+       const header = document.getElementById('collapseheader-' + show);
+      header.classList.remove('active');
+    }
+    if (show === index) {
+      show = null;
+    } else {
+      content.classList.remove('hid');
+      content2.classList.add('active');
+      show = index;
+    }
+  }
+</script>
 
 
 <!-- End of Services -->

@@ -1542,3 +1542,6 @@ a.newer-posts:hover {
     list-style: decimal;
     display: inline-block;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}

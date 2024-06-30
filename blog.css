@@ -1545,3 +1545,11 @@ a.newer-posts:hover {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

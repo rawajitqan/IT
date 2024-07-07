@@ -1854,7 +1854,7 @@ select {
 
     }
     .ml-20 {
-            margin-left: 5rem;
+            margin-left: 6rem;
 }
 
   .md\:h-auto {
@@ -1905,7 +1905,9 @@ select {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
 }
+
 .h-8 {
   height: 2rem;
 }
@@ -3987,7 +3989,12 @@ color: rgb(165 243 252);
   .sm\:h-30 {
     height: 30rem;
   }
-
+    
+}
+@media only screen and (max-width: 380px) {
+   .vsm\:mr-0{
+        margin-right: 0;
+    }
 }
 @media (min-width: 640px) {
   .sm\:block {
@@ -5324,6 +5331,9 @@ blockquote span {
  .sm\:ml-2 {
     margin-left: 0.5rem;
   }
+.sm\:ml-4 {
+    margin-left: 1rem;
+  }
   .footer-color {
     background-color: #00607b;
     padding-top: 2rem;
@@ -5533,4 +5543,12 @@ blockquote span {
   .transition {
     transition-duration: 75ms;
   }
+}
+@media (min-width: 810px) and (max-width: 1214px) {
+    .md\:mr-7 {
+        margin-right: 7rem
+    }
+ .md\:ml-8 {
+        margin-left: 8rem
+    }
 }

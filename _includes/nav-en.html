@@ -54,7 +54,7 @@
           <a
            
             class="text-white text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            href="/"
+            href={{ "/" | prepend: site.baseurl }}
           >
             العربية
           </a>
@@ -63,7 +63,7 @@
           <a
            
             class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            href="/en"
+            href={{ "/en" | prepend: site.baseurl }}
           >
             <img
               src="{{ '/img/RIIT.png' | prepend: site.baseurl }}"
@@ -88,33 +88,33 @@
   {% assign last_url_part = url_parts | last %}
   {% if last_url_part == 'en' or last_url_part contains 'en#' %}
       <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="#services">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/#services" | prepend: site.baseurl }}>
                Services
               </a>
             </li>
           <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="#portfolio">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/#portfolio" | prepend: site.baseurl }}>
                Portfolio
               </a>
             </li>
          <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="#من-نحن">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/#من-نحن" | prepend: site.baseurl }}>
                About Us
               </a>
             </li>
   {% else %}
       <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="/en/#services">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/en/#services" | prepend: site.baseurl }}>
                Services
               </a>
             </li>
           <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="/en/#portfolio">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/en/#portfolio" | prepend: site.baseurl }}>
                Portfolio
               </a>
             </li>
          <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="/en/#من-نحن">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/en/#من-نحن" | prepend: site.baseurl }}>
                About Us
               </a>
             </li>
@@ -123,14 +123,14 @@
 
            
             <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="/careers">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/careers" | prepend: site.baseurl }}>
                 Careers
               </a>
             </li>
           
     
  <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="/blog">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/blog" | prepend: site.baseurl }}>
               Blog
               </a>
             </li>

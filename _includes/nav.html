@@ -50,7 +50,7 @@
           <a
            
             class="fa-sun font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            href="/"
+            href={{ "/" | prepend: site.baseurl }}
           >
             <img
               src="{{ '/img/RIIT.png' | prepend: site.baseurl }}"
@@ -64,7 +64,7 @@
           <a
            
             class="text-white text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            href="/en"
+            href={{ "/en" | prepend: site.baseurl }}
           >
             En
           </a>
@@ -82,7 +82,7 @@
 
 
              <li class="nav-item flex">
-              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href="/#services">
+              <a class="px-3 py-2 flex items-center fa-sun uppercase font-bold leading-snug text-white lg:hover:text-blueGray-200 hover:opacity-75" href={{ "/#services" | prepend: site.baseurl }}>
                خدماتنا
               </a>
             </li>
